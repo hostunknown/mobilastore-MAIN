@@ -1,0 +1,372 @@
+.homepage {
+    width: 100%;
+    height: auto;
+
+
+    background: rgb(0,80,182);
+    background: linear-gradient(90deg, rgba(0,80,182,1) 0%, rgba(0,58,122,1) 63%);
+}
+
+
+.home-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-shadow: 5px 0px white;
+    letter-spacing: 0.3rem;
+}
+
+.benefits {
+    margin-top: 3%;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    gap: 5%;
+
+
+}
+
+.benefit {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit .benefit-name {
+    color: var(--text-color);
+}
+
+.benefit i {
+    font-size: 7rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.benefit-description {
+    margin-top: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* home content 2 */
+.home-content2 {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.home-description {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.header-description {
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: 3rem;
+
+    text-transform: uppercase;
+}
+
+.description-information {
+    margin-top: 1rem;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 1rem;
+}
+
+
+
+
+
+/* home content 3 */
+.home-content3 {
+    width: 100%;
+    height: 90vh;
+}
+
+.home-information {
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/furniture2.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.home-content3-header {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 5rem;
+}
+
+.home-btn {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 39%, rgba(9,19,121,1) 100%);
+    /* border: 2px solid black; */
+    outline: none;
+    border: none;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+    border-radius: 4px;
+    width: 13rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: 0.3s ease-out;
+    opacity: 0.8;
+}
+
+.home-btn:hover {
+    /* background: linear-gradient(90deg, rgba(9,19,121,1) 100%, rgba(2,0,36,1) 39%); */
+    color: white;
+    cursor: pointer;
+    /* transform: translateX(-1rem); */
+    filter: blur(2px);
+    opacity: 1;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.home-btn-right {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 39%, rgba(9,19,121,1) 100%);
+    /* border: 2px solid black; */
+    outline: none;
+    border: none;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+    border-radius: 4px;
+    width: 13rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: 0.3s ease-out;
+    opacity: 0.8;
+}
+
+.home-btn-right:hover {
+    color: white;
+    cursor: pointer;
+    /* transform: translateX(1rem); */
+    filter: blur(2px);
+    opacity: 1;
+}
+
+.benefit-details-btn {
+    display: none;
+}
+
+.benefit-mobile-details1,
+.benefit-mobile-details2,
+.benefit-mobile-details3,
+.benefit-mobile-details4 {
+    display: none;
+}
+
+.benefitsss {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .buttons {
+        gap: 1rem;
+    }
+
+    .home-btn, .home-btn-right {
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
+
+    .home-section-1 {
+        padding-top: 20%;
+    }
+
+    .benefits {
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+    }
+
+    .benefit {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 15%;
+    }
+
+    .benefit i {
+        font-size: 4rem;
+    }
+
+    .benefit .benefit-name {
+        display: none;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .benefit .benefit-description {
+        display: none;
+    }
+
+    .benefit .benefit-details-btn {
+        display: flex;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 39%, rgba(9,19,121,1) 100%);
+        padding: 15%;
+        padding-left: 18%;
+        padding-right: 18%;
+        color: var(--text-color);
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    .benefit .benefit-details-btn:hover {
+        color: white;
+    }
+
+    .benefit-mobile-details1,
+    .benefit-mobile-details2,
+    .benefit-mobile-details3,
+    .benefit-mobile-details4 {
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        backdrop-filter: blur(20px);
+        padding: 15%;
+    }
+
+    .benefit-mobile-name {
+        color: var(--text-color);
+    }
+
+    .benefit-mobile-description {
+        margin-top: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+
+    .benefit-mobile-icons {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 5%;
+    }
+
+    .ben-icon {
+        color: white;
+    }
+
+
+
+
+    .description-information {
+        margin: 0;
+        width: 100%;
+        padding: 5%;
+    }
+
+
+
+
+
+    .home-content3-header {
+        font-size: 2.2rem;
+        width: 100%;
+    }
+
+    .buttons {
+        overflow: hidden;
+        gap: 15%;
+    }
+
+    .buttons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-btn, .home-btn-right {
+        font-size: 1.8rem;
+        width: auto;
+        margin: 0;
+        padding: 10%;
+    }
+
+    .home-btn {
+        padding-left: 28%;
+        padding-right: 28%;
+        padding-top: 15%;
+    }
+
+
+    .benefitsss {
+        display: flex;
+    }
+
+    .benefitsss p {
+        padding-top: 10%;
+        margin-bottom: -5%;
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        color: white;
+        font-style: italic;
+        letter-spacing: 3px;
+    }
+}
